@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"handlers"
+	"github.com/arbitr38/simplerouter/handlers"
 )
 
 func main() {
