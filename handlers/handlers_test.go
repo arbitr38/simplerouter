@@ -13,8 +13,9 @@ func TestHome(t *testing.T) {
 
 	resp := w.Result()
 	if have, want := resp.StatusCode, http.StatusOK; have != want {
-		t.Errorf("Status code is wrong. Have: %d, want: %d", have, want)
+		t.Errorf("Status code is wrong. Have: %d, want: %d.", have, want)
 	}
+
 	greeting, err := ioutil.ReadAll(resp.Body)
 	resp.Body.Close()
 	if err != nil {
